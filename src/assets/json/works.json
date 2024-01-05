@@ -1,0 +1,93 @@
+{
+  "works": [
+    {
+      "id": "smart-work-kit",
+      "type": "disclosed",
+      "roles": [
+        "詳細設計",
+        "バックエンド",
+        "フロントエンド"
+      ],
+      "title": "SMART WORK KIT",
+      "siteName": "SMART WORK KIT",
+      "overview": "オフィス出社支援サービス",
+      "client": "株式会社ヒトバデザイン",
+      "thumbnailImage": "thumbnail-swk.png",
+      "officalUrl": "https://smart-workkit.co.jp",
+      "devOutline": "Laravel, Vue.js",
+      "comment": [
+        "機能追加フェーズで参画し以降の改修、機能追加をリードしました。",
+        "詳細設計からAPI実装、画面実装までと広い範囲を担当することが多く、",
+        "関わった期間が長かったこともあり愛着があります。",
+        "　",
+        "途中、大規模なデザインリニューアルを行なっています。",
+        "担当であったメイン機能画面、管理画面やアナリティクス画面の他、",
+        "問題であった実装の複雑性をコンポーネントの整理や共通化などを行うことで解消しました。",
+        "Vueを書くのは初めてだったのですが、必要なことを随時学びつつ貢献ができたかと思います。"
+      ]
+    },
+    {
+      "id": "nurse-call",
+      "type": "disclosed",
+      "roles": [
+        "詳細設計",
+        "バックエンド"
+      ],
+      "title": "NurseCall",
+      "siteName": "NurseCall",
+      "overview": "看護師向けストレスマネジメントアプリ",
+      "client": "会社名",
+      "thumbnailImage": "thumbnail-nursecall.png",
+      "officalUrl": "https://apps.nurse-support.com/",
+      "devOutline": "Laravel",
+      "comment": [
+        "立ち上げ時のバックエンド担当で参画しました。",
+        "主にメインコンテンツの性格診断とストレスチェック部分のロジック整理と実装を行いました。",
+        "この時点でアプリのバックエンドの経験がなかった為、成果物を触る度に新鮮な気持ちになったことを覚えています。",
+        "クライアント様やアプリ担当のエンジニアとのやりとりが多く情報の整理や共有にも注力しました。"
+      ]
+    },
+    {
+      "id": "book-link",
+      "type": "disclosed",
+      "roles": [
+        "基本設計",
+        "詳細設計",
+        "バックエンド"
+      ],
+      "title": "Book Link",
+      "siteName": "Book Link",
+      "overview": "書籍販促サービス",
+      "client": "会社名",
+      "thumbnailImage": "thumbnail-booklink.png",
+      "officalUrl": "https://book-link.jp/service/",
+      "devOutline": "Laravel, Vue.js",
+      "comment": [
+        "立ち上げ時のリードとして参画させていただきました。",
+        "途中稼働時間の問題でポジションのチェンジがありましたが、担当期間はスピード感を持って動けていたと思います。",
+        "以降は開発メンバーとして書籍関連機能の実装を行いました。"
+      ]
+    },
+    {
+      "id": "my-portfolio",
+      "type": "independent",
+      "roles": [
+        "デザイン",
+        "フロントエンド"
+      ],
+      "title": "PORTFOLIO",
+      "siteName": "PORTFOLIO",
+      "overview": "個人ポートフォリオ",
+      "client": "",
+      "thumbnailImage": "thumbnail-portfolio.png",
+      "officalUrl": "",
+      "devOutline": "Nuxt 3",
+      "comment": [
+        "本サイトになります。",
+        "Nuxt3の勉強を目的に、個人サイトが欲しかったので作成しました。",
+        "大まかなレイアウトのみで作り始めたので細かいデザインの調整に時間を取られてしまいました。",
+        "カラーリングやページトランジション、ミニマムに寄せたデザインなどが気に入っています。"
+      ]
+    }
+  ]
+}

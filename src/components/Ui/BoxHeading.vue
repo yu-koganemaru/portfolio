@@ -1,0 +1,31 @@
+<template lang="pug">
+.box-heading.automate
+  .title {{ title }}
+  .line
+</template>
+
+<script setup lang="ts">
+const props = defineProps(['title'])
+</script>
+
+<style lang="scss" scoped>
+.box-heading{
+  margin: 10rem auto 0;
+  .title{
+    padding: 0.5rem 1rem;
+    font-size: 2rem;
+    color: #fff;
+    border: 6px solid #fff;
+    width: fit-content;
+  }
+  .line{
+    display: block;
+    height: 0;
+    width: 100%;
+    border-bottom: 6px solid #fff;
+    position: relative;
+    top: -6px;
+    margin-bottom: 2rem;
+  }
+}
+</style>

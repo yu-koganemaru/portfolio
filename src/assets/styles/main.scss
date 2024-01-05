@@ -1,0 +1,149 @@
+@import './reset.scss';
+body{
+  background: #b8d200;
+  color: #fff;
+  transition:1s all;
+  height: 100%;
+}
+a{
+  text-decoration: none;
+  color: #0f1419;
+}
+
+/*デフォルトのマウスカーソルを非表示にする*/
+html,
+body,
+a {
+  cursor: none;
+}
+
+/*独自のマウスカーソルを作成*/
+.cursor {
+  position: fixed;
+  top: -5px;
+  left: -5px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #b8d200;
+  border: 5px solid #fff;
+  z-index: 1000;
+  transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
+  transform: translate(0, 0);
+  pointer-events: none;
+}
+
+/*aタグにホバーした時に見た目変化*/
+// .cursor.cursor--hover {
+//   top: -20px;
+//   left: -20px;
+//   width: 30px;
+//   height: 30px;
+// }
+
+.kopik{
+  font-family: "kopik", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.kopik-italic{
+  font-family: "kopik", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+.basic-sans{
+  font-family: "basic-sans", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.itc-avant-garde-gothic-pro{
+  font-family: "itc-avant-garde-gothic-pro", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.bc-alphapipe{
+  font-family: "bc-alphapipe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bc-alphapipe-mid{
+  font-family: "bc-alphapipe", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.bc-alphapipe-bold{
+  font-family: "bc-alphapipe", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.moby{
+  font-family: "moby", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.input-mono{
+  font-family: "input-mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+.automate{
+  font-family: "automate", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.forma-djr-micro{
+  font-family: "forma-djr-micro", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+.ballinger-mono{
+  font-family: "ballinger-mono", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.ten-mincho-antique{
+  font-family: "ten-mincho-antique", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.bd-caramel-variable{
+  font-family: "bd-caramel-variable", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rollerscript-smooth{
+  font-family: "rollerscript-smooth", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.rollerscript-rough{
+  font-family: "rollerscript-rough", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.pf-uniform{
+  font-family: "pf-uniform", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.fit{
+  font-family: "fit", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.fit-wide{
+  font-family: "fit-wide", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.obvia{
+  font-family: "obvia", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+.halcom{
+  font-family: "halcom", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
