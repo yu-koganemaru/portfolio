@@ -5,9 +5,10 @@ PageTransition(title="WORKS")
 FirstView(word="MY WORKS.")
 
 .works.bc-alphapipe-bold
-  
+
   .disclosed
     .heading DISCLOSED
+    p 公開可能案件
     WorksCardList(:works="discloseds")
 
   .Independent
@@ -27,20 +28,20 @@ FirstView(word="MY WORKS.")
 <script lang="ts" setup>
 // Get works contents from json.
 import allWorksData from '@/assets/json/works.json'
-const filteringWorksByType = (data: Works, type: string)=>{
+const filteringWorksByType = (data: Works, type: string) => {
   return data.works.filter(
     (work: Work) => work.type === type
-  );
-};
+  )
+}
 
-const discloseds = filteringWorksByType(allWorksData,'disclosed');
-const independents = filteringWorksByType(allWorksData,'independent');
+const discloseds = filteringWorksByType(allWorksData, 'disclosed')
+const independents = filteringWorksByType(allWorksData, 'independent')
 
 // emits.
-// const emit = defineEmits(["setImageOnLayout"]);
-// const setImageOnLayout = (value :object) => {
-//   emit('setImageOnLayout', value)
-// }
+const emit = defineEmits(['setImageOnLayout'])
+const setImageOnLayout = (value :object) => {
+  emit('setImageOnLayout', value)
+}
 </script>
 
 <style lang="scss" scoped>
@@ -48,8 +49,8 @@ const independents = filteringWorksByType(allWorksData,'independent');
   margin: 10rem auto 0;
   text-align: center;
   .heading{
-    background-color: #fff;
-    color: #b8d200;
+    background-color: $sub-color;
+    color: $main-color;
     width: 50rem;
     padding: 0.5rem;
     font-size: 2rem;
@@ -60,7 +61,7 @@ const independents = filteringWorksByType(allWorksData,'independent');
     margin-top: 2rem;
     font-size: 2rem;
     text-shadow: none;
-    color: #fff;
+    color: $sub-color;
   }
   .undisclosed{
     margin-bottom: 10rem;

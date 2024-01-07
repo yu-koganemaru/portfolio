@@ -52,9 +52,9 @@ const getToLink = () => {
   height: 100%;
   width: 100%;
   border-radius: 50px;
-  border: 1px solid #e0ebaf;
+  border: 1px solid $sub-color;
   overflow: hidden;
-  box-shadow: 10px 10px 0px 0px #69821b;
+  box-shadow: 10px 10px 0px 0px $main-dark-color;
   transition: 1s all;
   position: relative;
   text-align: center;
@@ -63,7 +63,7 @@ const getToLink = () => {
   &:hover{
     margin-bottom: 50px;
     transition: 1s all;
-    border: 10px solid #fff;
+    border: 10px solid $sub-color;
     transform: translate(-20px,-20px);
     box-shadow:
       10px 10px 0px 0px rgba(0, 0, 0, 0.4),
@@ -76,7 +76,7 @@ const getToLink = () => {
     width: 100%;
     padding-top: 50%;
     background-image: v-bind(backgroundImage);
-    background-color: #a2d7dd;
+    background-color: $image-background-color;
     background-size: cover;
     transition:1s all;
 
@@ -96,7 +96,7 @@ const getToLink = () => {
     background: rgba(0, 0, 0, 0.4);
     position: absolute;
     bottom: -20px;
-    color: #fff;
+    color: $sub-color;
     font-size: 2rem;
     transition:1s all;
   }

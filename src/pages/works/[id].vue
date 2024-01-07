@@ -4,9 +4,9 @@ PageTransition(:title="work?.title")
 
 .work-detail.bc-alphapipe-bold
   NuxtLink(to="/works") Back
-  
+
   .content
-    
+
     img(:src="backgroundImage").img
     .info
       table
@@ -21,11 +21,14 @@ PageTransition(:title="work?.title")
           td {{ work.overview }}
         tr(v-if="work.officalUrl")
           th OFFICAL
-          td {{ work.officalUrl }}
+          td.offical
+            .offical-url {{ work.officalUrl }}
+            img(src="~/assets/images/link-icon.png").link-icon(@click="transitionToLink")
+
         tr
           th DEV OUTLINE
           td {{ work.devOutline }}
-    
+
     BoxHeading(title="COMMENT").box-heading
     .comment
       p(v-for="para in work.comment" :key="para.index") {{ para }}
@@ -41,9 +44,9 @@ const work = worksData.works.find((work: Work) => work.id === params.id)
 const backgroundImage = '/_nuxt/assets/images/' + work?.thumbnailImage
 
 const transitionToLink = () => {
-      const url = work?.officalUrl
-      window.open(url, '_blank')
-    }
+  const url = work?.officalUrl
+  window.open(url, '_blank')
+}
 </script>
 
 <style lang="scss" scoped>
@@ -56,32 +59,47 @@ const transitionToLink = () => {
     .img{
       width: 60%;
       margin: auto;
-      background-color: #a2d7dd;
-      border: 10px solid #fff;
+      background-color: $image-background-color;
+      border: 10px solid $sub-color;
       border-radius: 50px;
     }
-    
+
     .info{
       width: 45%;
       margin: 8rem auto 0;
+      .offical{
+        display: flex;
+        position: relative;
+        width: 100%;
+      }
+      .offical-url{
+        width: 100%;
+        text-align: match-parent;
+      }
+      .link-icon{
+        left: 100%;
+        position: absolute;
+        width: 2rem;
+        height: 2rem;
+      }
       table{
         width: 100%;
-        height: 16rem;
         border-collapse: collapse;
-        color: #b8d200;
+        color: $main-color;
 
         th,td{
-          border: 10px solid #b8d200;
+          height: 3rem;
+          border: 10px solid $main-color;
         }
         th{
           font-weight: 600;
           width: 30%;
-          background-color: #38b48b;
-          background-color: #fff;
+          background-color: $sub-color;
         }
         td{
           width: 70%;
-          color: #fff;
+          color: $sub-color;
+          margin: auto;
         }
       }
     }
@@ -94,6 +112,6 @@ const transitionToLink = () => {
       text-align: start;
     }
   }
-  
+
 }
 </style>

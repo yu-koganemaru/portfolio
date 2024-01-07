@@ -15,12 +15,12 @@
 <script lang="ts" setup>
 const navs:{
   to: string
-  title:  string
-}[]=[
-  {to: '/about', title: 'ABOUT'},
-  {to: '/works', title: 'WORKS'},
-  {to: '/contact', title: 'CONTACT'},
-];
+  title: string
+}[] = [
+  { to: '/about', title: 'ABOUT' },
+  { to: '/works', title: 'WORKS' },
+  { to: '/contact', title: 'CONTACT' }
+]
 </script>
 
 <style lang="scss" scoped>
@@ -37,10 +37,10 @@ const navs:{
   .top-link{
     margin: 1.3rem 1rem 0;
     font-size: 40px;
-    @include textShadow(#d0576b, 10);
+    @include textShadow($accent-color, 10);
 
     a{
-      color: #fff;
+      color: $sub-color;
     }
 
     .router-link-active{
@@ -60,11 +60,11 @@ const navs:{
     }
 
     .router-link-active{
-      color: #fff;
+      color: $sub-color;
 
       .link-under-line{
         margin-top: -7px;
-        background: #fff;
+        background: $sub-color;
         width: 100%;
         height: 5px;
         top: -25px;

@@ -1,6 +1,6 @@
 <template lang="pug">
 #cursor.cursor
-Navbar
+AppNavbar
 //- .transition-cover(:style="styles")
 .content(:style="contentStyles")
   NuxtPage(@setImageOnLayout="setImage")
@@ -17,12 +17,8 @@ onMounted(() => {
   })
   const link = document.querySelectorAll('a')
   for (let i = 0; i < link.length; i++) {
-    link[i].addEventListener('mouseover', function (e) {
-      cursor.classList.add('cursor--hover')
-    })
-    link[i].addEventListener('mouseout', function (e) {
-      cursor.classList.remove('cursor--hover')
-    })
+    link[i].addEventListener('mouseover', function (e) { cursor.classList.add('cursor--hover') })
+    link[i].addEventListener('mouseout', function (e) { cursor.classList.remove('cursor--hover') })
   }
 })
 
@@ -54,10 +50,10 @@ onMounted(() => {
 }
 .transition-cover{
   position: absolute;
-  background-color: #fff;
+  background-color: $sub-color;
   // background-image: v-bind(backgroundImage);
   background-size: cover;
-  border: 8px solid #fff;
+  border: 8px solid $sub-color;
   border-radius: 50px;
   z-index:9999;
 }

@@ -14,7 +14,7 @@ PageTransition(title="Hello world!")
   .name{
     margin-top: 20rem;
     font-size: 4rem;
-    @include textShadow(#d0576b, 50);
+    @include textShadow($accent-color, 50);
     position:relative;
   }
   .sub-text{

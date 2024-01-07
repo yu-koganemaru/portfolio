@@ -21,7 +21,7 @@ const props = defineProps(['title'])
   left:0;
   right:0;
   bottom:0;
-  background-color:#fff;
+  background-color:$sub-color;
   z-index:9999;
 
   &::before{
@@ -31,14 +31,14 @@ const props = defineProps(['title'])
     left: 0;
     bottom: 0;
     margin: auto;
-    background-color: #b8d200;
+    background-color: $main-color;
     width: 0;
     height: 1px;
   }
 
   .transition-text{
     text-align: center;
-    color: #b8d200;
+    color: $main-color;
     font-size: 5rem;
     animation-name:fadeInAnime;
     animation-duration:1.3s;
@@ -106,3 +106,7 @@ const props = defineProps(['title'])
   }
 }
 </style>
+
+function definePageMeta(arg0: { pageTransition: { name: string } }) {
+  throw new Error("Function not implemented.")
+}

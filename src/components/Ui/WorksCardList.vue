@@ -19,16 +19,16 @@ const works :Work = props.works
     width: 40%;
     height: 100%;
     margin: 0 auto 10rem;
-    
+
     .roles{
       display: flex;
       justify-content: center;
       align-items: center;
       margin: 2.5rem 2rem 1rem;
-      
+
       .role{
-        background-color: #fff;
-        color: #0f1419;
+        background-color: $sub-color;
+        color: $text-color-black;
         padding: 0.5rem 1rem;
         margin: 0 1rem;
         border-radius: 25px;

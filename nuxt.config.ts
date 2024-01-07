@@ -31,7 +31,7 @@ export default defineNuxtConfig({
     css: {
       preprocessorOptions: {
         scss: {
-          additionalData: 
+          additionalData:
           '@import "@/assets/styles/variables.scss"; \
           @import "@/assets/styles/mixin.scss";'
         }
@@ -49,9 +49,9 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          src: 'https://use.typekit.net/eic3tdn.js',
-        },
-      ],
+          src: 'https://use.typekit.net/eic3tdn.js'
+        }
+      ]
     }
   }
 })

@@ -4,13 +4,13 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps(['word'])
+defineProps<{ word: string }>()
 </script>
 
 <style lang="scss" scoped>
 .firstview{
   text-align: center;
-  color: #fff;
+  color: $sub-color;
   font-size: 10rem;
   height: 100%;
   margin: 0 auto 20rem;
@@ -31,7 +31,7 @@ const props = defineProps(['word'])
     border-top: solid 3px;
     top: 18%;
     left: 15%;
-  }  
+  }
   &::after {
     border-right: solid 3px;
     border-bottom: solid 3px;

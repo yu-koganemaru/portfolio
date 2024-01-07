@@ -8,51 +8,72 @@ FirstView(word="ABOUT ME.").firstview
 
   BoxHeading(title="GREETING")
   .content-text
-    p.hilight こんにちは！
+    p.hilight-para こんにちは！
     p
       span.automate WEB
       span エンジニアをしている
-      span.hilight-black.automate YU
+      span.hilight-letter.automate YU
       span と申します。
-    
-    
-    p このサイトは僕個人の紹介や、実績の掲載を目的としています。
-    p よければゆるゆるとご覧ください。
-  
+
+    p このサイトは僕個人の紹介や、実績の掲載を目的としたサイトになります。
+    p よろしければごゆっくりとなさっていってください。
+
   BoxHeading(title="BACKGROUND")
   .content-text.hilght-first
     p 高校卒業後、父親の後押しがありオーストラリアに一年ほど留学をしていました。
     p その後、19歳の時に未経験からSES事業会社へ入社し3年ほどでフリーに転向することになります。
     p 現在は埼玉〜東京近辺で活動しています。
-    
+
     br
     p 考えるという行為が嫌ではなく、腕を組んでむむっとしている時間が割と好きです。
-    p 面倒なことや苦しいこともありますが、やはりものづくりには楽しさであったり気持ちよさがあるなと思います。
-    p また、人と人であったり、人と価値のある沢山のものを繋いでいく。
+    p 面倒なことや苦しいこともありますが、やはり、ものづくりには楽しさであったり気持ちよさがあって好きだな〜と感じます。
+    p また、人と人であったり、人と価値のある沢山のものを繋いでいく喜び。
     p そういったものがこの業種において僕を動かす根幹にある気がしています。
 
   BoxHeading(title="THOUGHT")
   .content-text
-    p この業界に足を踏み入れてから沢山のプロジェクトに関わらせていただきました。
-    p 歳を重ねるにつれて、世の中のことや自分自身のことなど、少しづつ視野が広がってきたのを感じます。
-    p そんな僕の考えについて書かせてください。
-    p 今までの経験や考えと、そこから見た、これからについての目標になります。
-    
+    p IT業界に足を踏み入れたのは19歳の時、当時はやりたいこともなく、働く目的なんてお金くらいのものでした。
+    p そこから自分の頑張りや周りの人の支えもあって、現在、ありがたいことに生きていくことができています。
+    p そんな僕の「こんなことをしたいな〜」とか、「これからはこうなっていきたいな〜」という思い。
+    p また、そこへ至った背景を書かせていただければと思います。
+
     br
     h2 いままで
     br
     .text-block
-      p 19歳で足を踏み入れたIT業界、当時は働く目的なんてお金くらいのものでした。
-      p だんだんと時間がたつにつれて
+      p 未経験での中途採用から独立を経て、おかげさまで沢山のプロジェクトに関わらせてただけるようになりました。
+      p その間に時世の影響や勤務形態の変化からフルリモートでの在宅作業がメインになり、
+      p クライアントやチームメンバとのコミュニケーション方法や仕事の進め方なども変わってきました。
+      p また、仕事上でもできることや任せていただける範囲が大きく広がり、それ以外の経験も積み重なってくると、
+      p 世の中のことや自分自身のことなど、少しづつ見えるものが増えてきました。
+      br
+      p こうして改めていままでのことを振り返ってみると、社会人になりたての頃と比べて沢山の変化があったのを感じます。
+      p そしてだんだんと得意分野や好きなこと、好きな人、モチベーションになるもの、
+      p 仕事においての哲学など自己について考えるようになりました。
+      br
+      p 設計が好き。を踏み込んで考えてみると、これなら動くんじゃないかという期待感や問題解決ができた時の達成感など。
+      p コーディングも好きですが、感覚として使う脳みそが切り離されていて独自のエネルギーが必要だなと感じます。
+      p 何よりも、コミュニケーションにおいて意外と人と話すこと、文章を書くことが嫌いではないということ。
+      p なんだかんだで僕は人間が好きであるし、これまで人に囲まれて生きてきたのだなと思いました。
 
     br
     h2 これから
     br
     .text-block
-      p 沢山のプロジェクトや人と関わり、気づいたのは「世界は人が回している」、ということです。
-      p なので今はバックエンドのお仕事をいただくことが多いですが、最近はフロントエンドやデザインにも興味があります。
-      p 設計やデータベース、APIなどのバックエンドの知識や経験を武器に、
-      p 人と接する面であるフロント領域もこれからどんどん挑戦していければと思います。
+      p そんな中で一番大きな気付きというか実感したことがあります。
+      p それは「世界は人が回している」ということです。
+      p 「そんなんあたりめーじゃんかさ」とか言われそうですが。
+      br
+      p なのでやっとUXなどの分野の存在意義を理解することができたと思います。
+      p どんな製品も人に優しいものでなければ良いものとは言えません。
+      p また、どんなに良い製品だとしても、人に知られていなければ価値がありません。
+      p そしてそれらを考えて、手を動かして、作り出すのも人なのです。
+      br
+      p 今はバックエンドのお仕事でお声がけいただけることが多いですが、
+      p ゆくゆくはフロントエンドやデザインにも携われるようになりたいです。
+      p 最終的にはUXなどの領域にも手を伸ばせるように。
+      p 人との繋がりを考えながら、人のことを考えながら、
+      p これから沢山のことに挑戦していければと思います。
 
   BoxHeading(title="PERSONAL")
 
@@ -69,8 +90,8 @@ FirstView(word="ABOUT ME.").firstview
   .heading SKILLS
   .content-skills
     ui.skills.bc-alphapipe
-      li(v-for="skill in skills" :key="skill.index").skill {{ skill }}  
-  
+      li(v-for="skill in skills" :key="skill.index").skill {{ skill }}
+
   .heading TIPS
   .content-tips
     ui.tips.bc-alphapipe
@@ -84,17 +105,17 @@ import skillsData from '@/assets/json/skills.json'
 import tipsData from '@/assets/json/tips.json'
 import { profiles } from '~/types/profiles'
 
-const skills: string[] = skillsData.skills;
-const tips: string[] = tipsData.tips;
+const skills: string[] = skillsData.skills
+const tips: string[] = tipsData.tips
 
 const isKey = (key: string, str: string) => {
-  return (key == str);
+  return (key == str)
 }
 const getBirthday = () => {
   return profiles.BIRTH.getFullYear() + '/0' + (profiles.BIRTH.getMonth() + 1) + '/' + profiles.BIRTH.getDate()
 }
 const getAge = () => {
-  return profiles.AGE();
+  return profiles.AGE()
 }
 </script>
 
@@ -108,7 +129,7 @@ const getAge = () => {
   width: 70%;
   margin: 30% auto 10%;
   text-align: center;
-  color: #fff;
+  color: $sub-color;
 
   .content-summary{
     font-family: "source-han-sans-japanese";
@@ -121,8 +142,8 @@ const getAge = () => {
   }
 }
 .heading{
-  background-color: #fff;
-  color: #b8d200;
+  background-color: $sub-color;
+  color: $main-color;
   width: 45rem;
   padding: 0.3rem;
   font-size: 2rem;
@@ -161,11 +182,11 @@ const getAge = () => {
     list-style: none;
     position: relative;
     padding: 0.5rem 1rem;
-    box-shadow: 6px -6px #212121;
-    outline: 3px solid #b8d200;
-    border: 3px solid #212121;
-    background-color: #fff;
-    color: #212121;
+    box-shadow: 6px -6px $text-color-black;
+    outline: 3px solid $main-color;
+    border: 3px solid $text-color-black;
+    background-color: $sub-color;
+    color: $text-color-black;
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
@@ -179,14 +200,17 @@ const getAge = () => {
   width: 90%;
   margin: 5rem auto 10rem;
   text-align: start;
-  .hilight{
-    padding: 0.5rem 0;
-    font-size: 1.7rem;
+  h2{
+    margin: 2rem 0 0;
+    font-size: 2rem;
   }
-  .hilight-black{
+  .hilight-para{
+    padding: 0.8rem 0;
+    font-size: 1.9rem;
+  }
+  .hilight-letter{
     padding: 0.5rem;
     font-size: 1.7rem;
-    color: #333;
   }
 
   &.hilght-first{
@@ -215,19 +239,18 @@ const getAge = () => {
       width: 90%;
       list-style: none;
       position: relative;
-      
-      box-shadow: 10px -10px #212121;
-      outline: 3px solid #b8d200;
-      border: 3px solid #212121;
+
+      box-shadow: 10px -10px $text-color-black;
+      outline: 3px solid $main-color;
+      border: 3px solid $text-color-black;
       border-radius: 15px;
-      background-color: #fff;
-      color: #212121;
+      background-color: $sub-color;
+      color: $text-color-black;
       font-size: 1.1rem;
       font-weight: bold;
       text-align: center;
     }
   }
 }
-
 
 </style>

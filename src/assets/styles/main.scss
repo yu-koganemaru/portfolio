@@ -1,13 +1,13 @@
 @import './reset.scss';
 body{
-  background: #b8d200;
-  color: #fff;
+  background: $main-color;
+  color: $sub-color;
   transition:1s all;
   height: 100%;
 }
 a{
   text-decoration: none;
-  color: #0f1419;
+  color: $text-color-black;
 }
 
 /*デフォルトのマウスカーソルを非表示にする*/
@@ -25,8 +25,8 @@ a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: #b8d200;
-  border: 5px solid #fff;
+  background: $main-color;
+  border: 5px solid $sub-color;
   z-index: 1000;
   transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
   transform: translate(0, 0);

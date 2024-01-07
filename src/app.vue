@@ -6,13 +6,13 @@ main
 </template>
 
 <script>
-  
+
 export default {
-  mounted() {
+  mounted () {
     try {
-      Typekit.load({ async: true });
+      Typekit.load({ async: true })
     } catch (e) {
-      console.log(e);
+      console.log(e)
     }
   }
 }

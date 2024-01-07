@@ -5,7 +5,7 @@
 </template>
 
 <script setup lang="ts">
-const props = defineProps(['title'])
+defineProps<{ title: string }>()
 </script>
 
 <style lang="scss" scoped>
@@ -14,15 +14,15 @@ const props = defineProps(['title'])
   .title{
     padding: 0.5rem 1rem;
     font-size: 2rem;
-    color: #fff;
-    border: 6px solid #fff;
+    color: $sub-color;
+    border: 6px solid $sub-color;
     width: fit-content;
   }
   .line{
     display: block;
     height: 0;
     width: 100%;
-    border-bottom: 6px solid #fff;
+    border-bottom: 6px solid $sub-color;
     position: relative;
     top: -6px;
     margin-bottom: 2rem;
