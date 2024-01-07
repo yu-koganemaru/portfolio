@@ -39,7 +39,7 @@ export default defineNuxtConfig({
     }
   },
   app: {
-      baseURL: '/portfolio/',
+    // baseURL: '/portfolio/',
     head: {
       link: [
         {

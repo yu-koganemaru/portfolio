@@ -1,6 +1,6 @@
 <template lang="pug">
 .footer.automate
-  img(src="~/assets/images/copyright.png").link-icon(@click="linkToGitHub").copyright-icon
+  img( src="/images/copyright.png").link-icon(@click="linkToGitHub").copyright-icon
   span.copyright-text 2024~　YU KOGANEMARU.
 </template>
 
