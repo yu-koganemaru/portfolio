@@ -13,7 +13,7 @@ defineProps<{ word: string }>()
   color: $sub-color;
   font-size: 10rem;
   height: 100%;
-  margin: 0 auto 20rem;
+  margin: 0 auto 30rem;
 
   .word{
     margin: 20% auto 23%;

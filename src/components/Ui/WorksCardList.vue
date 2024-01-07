@@ -1,7 +1,7 @@
 <template lang="pug">
 .work-cards
   .work-card( v-for="work in works" :key="work.id" )
-    WorksCard(:work="work").card
+    WorksCard(:work="work")
     .roles
       .role( v-for="role in work.roles" :key="role.index" ) {{ role }}
 </template>
@@ -27,11 +27,12 @@ const works :Work = props.works
       margin: 2.5rem 2rem 1rem;
 
       .role{
-        background-color: $sub-color;
-        color: $text-color-black;
+        background-color: $main-color;
+        color: $sub-color;
         padding: 0.5rem 1rem;
         margin: 0 1rem;
-        border-radius: 25px;
+        border-radius: 10px;
+        border: 3px solid $sub-color;
       }
     }
   }

@@ -4,7 +4,7 @@ AppNavbar
 //- .transition-cover(:style="styles")
 .content(:style="contentStyles")
   NuxtPage(@setImageOnLayout="setImage")
-Footer
+AppFooter
 </template>
 
 <script setup lang="ts">

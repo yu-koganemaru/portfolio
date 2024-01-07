@@ -30,6 +30,29 @@ FirstView(word="ABOUT ME.").firstview
     p また、人と人であったり、人と価値のある沢山のものを繋いでいく喜び。
     p そういったものがこの業種において僕を動かす根幹にある気がしています。
 
+  BoxHeading(title="PERSONAL")
+
+  .heading PROFILE
+  .content-profile
+    table.profiles
+      tr(v-for="value, key, index in profiles" :key="index")
+        td.key {{ key }}
+        td :
+        td.value(v-if="isKey(key, 'BIRTH')") {{ getBirthday()}}
+        td.value(v-else-if="isKey(key, 'AGE')") {{ getAge()}}
+        td.value(v-else) {{ value }}
+
+  .heading SKILLS
+  .content-skills
+    ui.skills.bc-alphapipe
+      li(v-for="skill in skills" :key="skill.index").skill {{ skill }}
+
+  .heading TIPS
+  .content-tips
+    ui.tips.bc-alphapipe
+      li(v-for="tip in tips" :key="tip.index").tip
+        p.obvia {{ tip }}
+
   BoxHeading(title="THOUGHT")
   .content-text
     p IT業界に足を踏み入れたのは19歳の時、当時はやりたいこともなく、働く目的なんてお金くらいのものでした。
@@ -64,40 +87,19 @@ FirstView(word="ABOUT ME.").firstview
       p それは「世界は人が回している」ということです。
       p 「そんなんあたりめーじゃんかさ」とか言われそうですが。
       br
-      p なのでやっとUXなどの分野の存在意義を理解することができたと思います。
+      p 単純なことではありますが僕にとってはインパクトのあるものでした。
+      p UXなどの分野の存在意義を身をもって理解しました。
+      br
       p どんな製品も人に優しいものでなければ良いものとは言えません。
       p また、どんなに良い製品だとしても、人に知られていなければ価値がありません。
-      p そしてそれらを考えて、手を動かして、作り出すのも人なのです。
+      p そしてそれらを考えて、手を動かして、作り出しているのは人なのです。
       br
-      p 今はバックエンドのお仕事でお声がけいただけることが多いですが、
+      p というふうに、今はバックエンドのお仕事でお声がけいただけることが多いですが、
       p ゆくゆくはフロントエンドやデザインにも携われるようになりたいです。
       p 最終的にはUXなどの領域にも手を伸ばせるように。
+      br
       p 人との繋がりを考えながら、人のことを考えながら、
       p これから沢山のことに挑戦していければと思います。
-
-  BoxHeading(title="PERSONAL")
-
-  .heading PROFILE
-  .content-profile
-    table.profiles
-      tr(v-for="value, key, index in profiles" :key="index")
-        td.key {{ key }}
-        td :
-        td.value(v-if="isKey(key, 'BIRTH')") {{ getBirthday()}}
-        td.value(v-else-if="isKey(key, 'AGE')") {{ getAge()}}
-        td.value(v-else) {{ value }}
-
-  .heading SKILLS
-  .content-skills
-    ui.skills.bc-alphapipe
-      li(v-for="skill in skills" :key="skill.index").skill {{ skill }}
-
-  .heading TIPS
-  .content-tips
-    ui.tips.bc-alphapipe
-      li(v-for="tip in tips" :key="tip.index").tip
-        p.obvia {{ tip }}
-
 </template>
 
 <script setup lang="ts">
@@ -120,10 +122,6 @@ const getAge = () => {
 </script>
 
 <style lang="scss" scoped>
-
-.firstview{
-  margin-bottom: 10rem;
-}
 .about{
   height: 100%;
   width: 70%;
@@ -206,7 +204,7 @@ const getAge = () => {
   }
   .hilight-para{
     padding: 0.8rem 0;
-    font-size: 1.9rem;
+    font-size: 1.5rem;
   }
   .hilight-letter{
     padding: 0.5rem;

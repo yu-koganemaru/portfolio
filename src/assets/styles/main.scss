@@ -25,7 +25,7 @@ a {
   width: 20px;
   height: 20px;
   border-radius: 50%;
-  background: $main-color;
+  background-color: $main-color;
   border: 5px solid $sub-color;
   z-index: 1000;
   transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
@@ -34,12 +34,10 @@ a {
 }
 
 /*aタグにホバーした時に見た目変化*/
-// .cursor.cursor--hover {
-//   top: -20px;
-//   left: -20px;
-//   width: 30px;
-//   height: 30px;
-// }
+.cursor.cursor--hover {
+  background-color: $sub-color;
+  border: 5px solid $accent-color;
+}
 
 .kopik{
   font-family: "kopik", sans-serif;
@@ -145,5 +143,25 @@ a {
 .halcom{
   font-family: "halcom", sans-serif;
   font-weight: 700;
+  font-style: normal;
+}
+.a-otf-ud-shin-maru-go-pr6n{
+  font-family: "a-otf-ud-shin-maru-go-pr6n", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.wanpaku-rera{
+  font-family: "wanpaku-rera", sans-serif;
+  font-weight: 100;
+  font-style: normal;  
+}
+.vdl-v7marugothic{
+  font-family: "vdl-v7marugothic", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+.fot-seurat-pron{
+  font-family: "fot-seurat-pron", sans-serif;
+  font-weight: 600;
   font-style: normal;
 }

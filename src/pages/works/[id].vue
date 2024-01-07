@@ -24,7 +24,6 @@ PageTransition(:title="work?.title")
           td.offical
             .offical-url {{ work.officalUrl }}
             img(src="~/assets/images/link-icon.png").link-icon(@click="transitionToLink")
-
         tr
           th DEV OUTLINE
           td {{ work.devOutline }}
