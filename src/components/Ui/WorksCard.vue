@@ -11,7 +11,9 @@ const props = defineProps(['work'])
 const work :Work = props.work
 
 // Setting background-image.
-const backgroundImage = 'url(/_nuxt/assets/images/' + work.thumbnailImage + ')'
+const runtimeConfig = useRuntimeConfig()
+const baseURL = runtimeConfig.app.baseURL
+const backgroundImage = 'url('+ baseURL+ 'images/' + work.thumbnailImage + ')'
 
 // Common funcs.
 const transitionToDetail = () => {

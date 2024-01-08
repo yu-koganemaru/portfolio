@@ -2,9 +2,6 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   srcDir: 'src/',
-  image: {
-    dir: 'assets/images'
-  },
   ssr: false,
   typescript: {
     shim: false,
@@ -39,7 +36,7 @@ export default defineNuxtConfig({
     }
   },
   app: {
-    // baseURL: '/portfolio/',
+    baseURL: '/portfolio/',
     head: {
       link: [
         {
