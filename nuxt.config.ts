@@ -2,12 +2,10 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
-  srcDir: 'src/',
-  generate: {
-    routes: [
-        '/works/', 
-    ]
+  routeRules: {
+    '/works/*': { ssr: true, prerender: true },
   },
+  srcDir: 'src/',
   typescript: {
     shim: false,
     strict: true,
