@@ -11,9 +11,7 @@ const props = defineProps(['work'])
 const work :Work = props.work
 
 // Setting background-image.
-const runtimeConfig = useRuntimeConfig()
-const baseURL = runtimeConfig.app.baseURL
-const backgroundImage = 'url('+ baseURL+ 'images/' + work.thumbnailImage + ')'
+const backgroundImage = 'url(~/assets/images/' + work.thumbnailImage + ')'
 
 // Common funcs.
 const transitionToDetail = () => {

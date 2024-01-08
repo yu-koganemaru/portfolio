@@ -1,11 +1,10 @@
 <template lang="pug">
 .footer.automate
-  img(:src="`${ $config.app.baseURL }images/copyright.png`" alt="(C)").link-icon(@click="linkToGitHub").copyright-icon
+  img(src="~/assets/images/copyright.png" alt="(C)").link-icon(@click="linkToGitHub").copyright-icon
   span.copyright-text 2024~　YU KOGANEMARU.
 </template>
 
 <script setup lang="ts">
-const imgUrl = new URL('./copyright.png', import.meta.url).href
 </script>
 
 <style lang="scss" scoped>

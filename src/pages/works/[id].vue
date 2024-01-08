@@ -40,7 +40,7 @@ import worksData from '@/assets/json/works.json'
 const { params } = useRoute()
 const work = worksData.works.find((work: Work) => work.id === params.id)
 
-const backgroundImage = '/_nuxt/assets/images/' + work?.thumbnailImage
+const backgroundImage = '~/assets/images/' + work?.thumbnailImage
 
 const transitionToLink = () => {
   const url = work?.officalUrl
