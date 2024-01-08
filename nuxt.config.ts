@@ -14,9 +14,6 @@ export default defineNuxtConfig({
       pathPrefix: false
     }
   ],
-  modules: [
-    '@nuxt/image'
-  ],
   imports: {
     dirs: [
       'types/*.ts',

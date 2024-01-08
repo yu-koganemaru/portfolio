@@ -1,17 +1,22 @@
 <template lang="pug">
 .work.bc-alphapipe-bold(@click="transitionToDetail()")
-  .bg(ref="thumbnail")
+  img(:src="images[image]").bg
 </template>
 
 <script lang="ts" setup>
+import { filename } from 'pathe/utils';
+
 const router = useRouter()
-const route = useRoute()
 
 const props = defineProps(['work'])
 const work :Work = props.work
 
 // Setting background-image.
-const backgroundImage = 'url(~/assets/images/' + work.thumbnailImage + ')'
+const glob = import.meta.glob('~/assets/images/*', { eager: true });
+const images = Object.fromEntries(
+  Object.entries(glob).map(([key, value]) => [filename(key), value.default])
+);
+const image = work.thumbnailImage
 
 // Common funcs.
 const transitionToDetail = () => {
@@ -75,7 +80,6 @@ const getToLink = () => {
   .bg{
     width: 100%;
     padding-top: 50%;
-    background-image: v-bind(backgroundImage);
     background-color: $image-background-color;
     background-size: cover;
     transition:1s all;
