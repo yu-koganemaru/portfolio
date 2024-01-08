@@ -7,7 +7,7 @@ PageTransition(:title="work?.title")
 
   .content
 
-    img(:src="backgroundImage").img
+    img(:src="images[work?.thumbnailImage]").img
     .info
       table
         tr(v-if="work.client")
@@ -35,12 +35,16 @@ PageTransition(:title="work?.title")
 </template>
 
 <script setup lang="ts">
+import { filename } from 'pathe/utils';
 import type { Work } from '~/types/work'
 import worksData from '@/assets/json/works.json'
 const { params } = useRoute()
 const work = worksData.works.find((work: Work) => work.id === params.id)
 
-const backgroundImage = '/portfolio/public/images/' + work?.thumbnailImage
+const glob = import.meta.glob('~/assets/images/*', { eager: true });
+const images = Object.fromEntries(
+  Object.entries(glob).map(([key, value]) => [filename(key), value.default])
+);
 
 const transitionToLink = () => {
   const url = work?.officalUrl
