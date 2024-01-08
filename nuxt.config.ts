@@ -1,11 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   devtools: { enabled: false },
-  ssr:false,
+  ssr: false,
   srcDir: 'src/',
-  image: {
-    dir: '/images'
-  },
   typescript: {
     shim: false,
     strict: true,
