@@ -7,7 +7,7 @@ PageTransition(:title="work?.title")
 
   .content
 
-    img(:src="images[work.thumbnailImage]").img
+    img(:src="image").img
     .info
       table
         tr(v-if="work.client")
@@ -41,11 +41,12 @@ import worksData from '@/assets/json/works.json'
 const { params } = useRoute()
 const work = worksData.works.find((work: Work) => work.id === params.id)
 
-const glob = import.meta.glob('~/assets/images/*.png', { eager: true });
-const images = Object.fromEntries(
-  Object.entries(glob).map(([key, value]) => [filename(key), value.default])
-);
-// const backgroundImage = '/_nuxt/assets/images/' + work?.thumbnailImage
+// const glob = import.meta.glob('~/assets/images/*.png', { eager: true });
+// const images = Object.fromEntries(
+//   Object.entries(glob).map(([key, value]) => [filename(key), value.default])
+// );
+
+const image  = '@/images/' + work.thumbnailImage;
 
 const transitionToLink = () => {
   const url = work?.officalUrl
