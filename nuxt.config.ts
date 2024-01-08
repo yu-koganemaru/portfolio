@@ -2,6 +2,9 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   srcDir: 'src/',
+  image: {
+    dir: '/images'
+  },
   typescript: {
     shim: false,
     strict: true,
