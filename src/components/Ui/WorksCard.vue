@@ -17,7 +17,7 @@ const work :Work = props.work
 //   Object.entries(glob).map(([key, value]) => [filename(key), value.default])
 // );
 // const image = work.thumbnailImage
-const image  = '@/images/' + work.thumbnailImage;
+const image  = '/portfolio/_nuxt/assets/images/' + work.thumbnailImage;
 
 // Common funcs.
 const transitionToDetail = () => {
