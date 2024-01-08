@@ -3,6 +3,11 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   srcDir: 'src/',
+  generate: {
+    routes: [
+        '/works/', 
+    ]
+  },
   typescript: {
     shim: false,
     strict: true,
