@@ -29,8 +29,8 @@ jobs:
         uses: actions/configure-pages@v1
       - name: Install dependencies
         run: npm i
-      # - name: Static HTML export with Nuxt
-      #   run: npx nuxi generate
+      - name: Static HTML export with Nuxt
+        run: npx nuxi generate
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v1
         with:
