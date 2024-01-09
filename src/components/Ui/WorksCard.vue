@@ -11,12 +11,6 @@ const router = useRouter()
 const props = defineProps(['work'])
 const work :Work = props.work
 
-// Setting background-image.
-// const glob = import.meta.glob('~/assets/images/*', { eager: true });
-// const images = Object.fromEntries(
-//   Object.entries(glob).map(([key, value]) => [filename(key), value.default])
-// );
-// const image = work.thumbnailImage
 const image  = '/portfolio/_nuxt/' + work.thumbnailImage;
 
 // Common funcs.
@@ -80,7 +74,6 @@ const getToLink = () => {
 
   .bg{
     width: 100%;
-    padding-top: 50%;
     background-color: $image-background-color;
     background-size: cover;
     transition:1s all;

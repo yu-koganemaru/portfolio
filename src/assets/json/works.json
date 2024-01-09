@@ -37,7 +37,7 @@
       "siteName": "NurseCall",
       "overview": "看護師向けストレスマネジメントアプリ",
       "client": "会社名",
-      "thumbnailImage": "thumbnail-nursecall.png",
+      "thumbnailImage": "thumbnail-nursecall.6f62c74a.png",
       "officalUrl": "https://apps.nurse-support.com/",
       "devOutline": "Laravel",
       "comment": [
@@ -59,7 +59,7 @@
       "siteName": "Book Link",
       "overview": "書籍販促サービス",
       "client": "会社名",
-      "thumbnailImage": "thumbnail-booklink.png",
+      "thumbnailImage": "thumbnail-booklink.c5cbcf3a.png",
       "officalUrl": "https://book-link.jp/service/",
       "devOutline": "Laravel, Vue.js",
       "comment": [
@@ -79,7 +79,7 @@
       "siteName": "PORTFOLIO",
       "overview": "個人ポートフォリオ",
       "client": "",
-      "thumbnailImage": "thumbnail-portfolio.png",
+      "thumbnailImage": "thumbnail-portfolio.fd311cbc.png",
       "officalUrl": "",
       "devOutline": "Nuxt 3",
       "comment": [
