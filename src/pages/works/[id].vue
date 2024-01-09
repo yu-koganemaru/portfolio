@@ -35,18 +35,12 @@ PageTransition(:title="work?.title")
 </template>
 
 <script setup lang="ts">
-import { filename } from 'pathe/utils';
 import type { Work } from '~/types/work'
 import worksData from '@/assets/json/works.json'
 const { params } = useRoute()
 const work = worksData.works.find((work: Work) => work.id === params.id)
 
-// const glob = import.meta.glob('~/assets/images/*.png', { eager: true });
-// const images = Object.fromEntries(
-//   Object.entries(glob).map(([key, value]) => [filename(key), value.default])
-// );
-
-const image  = '@/images/' + work.thumbnailImage;
+const image  = '/portfolio/_nuxt/' + work?.thumbnailImage;
 
 const transitionToLink = () => {
   const url = work?.officalUrl
