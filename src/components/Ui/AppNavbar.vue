@@ -33,12 +33,19 @@ const navs:{
   margin-bottom: 5rem;
   margin-left: 3rem;
   z-index:1;
+  @media screen and (max-width: 428px){
+    position: static;
+    display: block;
+  }
 
   .top-link{
     margin: 1.3rem 1rem 0;
     font-size: 40px;
     @include textShadow($accent-color, 10);
-
+    @media screen and (max-width: 428px){
+      text-align: center;
+      margin: 0;
+    }
     a{
       color: $sub-color;
     }
@@ -57,6 +64,9 @@ const navs:{
     a{
       font-size: 2rem;
       margin: 0 3rem 0;
+      @media screen and (max-width: 960px){
+        margin: 0 1.5rem 0;
+      }
     }
 
     .router-link-active{

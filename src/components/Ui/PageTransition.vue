@@ -47,6 +47,9 @@ const props = defineProps(['title'])
   }
   .upper{
     margin-top: 21%;
+    @media screen and (max-width: 960px){
+      margin-top: 28%;
+    }
   }
 }
 

@@ -128,21 +128,17 @@ const getAge = () => {
   margin: 30% auto 10%;
   text-align: center;
   color: $sub-color;
-
-  .content-summary{
-    font-family: "source-han-sans-japanese";
-    font-weight: 500;
-    font-size: 1.1rem;
-    line-height: 1.8em;
+  @media screen and (max-width: 1280px){
+    width: 80%;
+  }
+  @media screen and (max-width: 960px){
     width: 90%;
-    margin: 1rem auto 1rem;
-    text-align: start;
   }
 }
 .heading{
   background-color: $sub-color;
   color: $main-color;
-  width: 45rem;
+  width: 90%;
   padding: 0.3rem;
   font-size: 2rem;
   margin: 10rem auto 0;
@@ -223,9 +219,15 @@ const getAge = () => {
   }
 }
 .content-tips{
-  width: 60%;
+  width: 70%;
   margin: auto;
   margin-bottom: 10rem;
+  @media screen and (max-width: 1280px){
+    width: 80%;
+  }
+  @media screen and (max-width: 960px){
+    width: 90%;
+  }
   .tips{
     display: flex;
     flex-wrap: wrap;

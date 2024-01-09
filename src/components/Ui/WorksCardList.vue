@@ -19,6 +19,12 @@ const works :Work = props.works
     width: 40%;
     height: 100%;
     margin: 0 auto 10rem;
+    @media screen and (max-width: 1280px){
+      width: 65%;
+    }
+    @media screen and (max-width: 960px){
+      width: 80%;
+    }
 
     .roles{
       display: flex;

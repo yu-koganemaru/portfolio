@@ -16,10 +16,17 @@ PageTransition(title="Hello world!")
     font-size: 4rem;
     @include textShadow($accent-color, 50);
     position:relative;
+    @media screen and (max-width: 390px){
+      margin: 50% auto 50%;
+      font-size: 2rem;
+    }
   }
   .sub-text{
     margin-top: 4rem;
     font-size: 1.5rem;
+    @media screen and (max-width: 390px){
+      margin-bottom: 30%;
+    }
   }
 }
 

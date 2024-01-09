@@ -61,11 +61,23 @@ const transitionToLink = () => {
       background-color: $image-background-color;
       border: 10px solid $sub-color;
       border-radius: 50px;
+      @media screen and (max-width: 1280px){
+        width: 80%;
+      }
+      @media screen and (max-width: 960px){
+        width: 90%;
+      }
     }
 
     .info{
       width: 45%;
       margin: 8rem auto 0;
+      @media screen and (max-width: 1280px){
+        width: 60%;
+      }
+      @media screen and (max-width: 960px){
+        width: 70%;
+      }
       .offical{
         display: flex;
         position: relative;
@@ -94,21 +106,33 @@ const transitionToLink = () => {
           font-weight: 600;
           width: 30%;
           background-color: $sub-color;
+          @media screen and (max-width: 960px){
+            width: 40%;
+          }
         }
         td{
           width: 70%;
           color: $sub-color;
           margin: auto;
+          @media screen and (max-width: 960px){
+            width: 60%;
+          }
         }
       }
     }
     .box-heading{
       width: 60%;
+      @media screen and (max-width: 960px){
+        width: 80%;
+      }
     }
     .comment{
       width: 55%;
       margin: 1rem auto 20%;
       text-align: start;
+      @media screen and (max-width: 960px){
+        width: 75%;
+      }
     }
   }
 

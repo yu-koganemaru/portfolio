@@ -9,14 +9,25 @@ defineProps<{ word: string }>()
 
 <style lang="scss" scoped>
 .firstview{
-  text-align: center;
-  color: $sub-color;
-  font-size: 10rem;
   height: 100%;
   margin: 0 auto 30rem;
-
+  text-align: center;
+  color: $sub-color;
+  font-size: 8rem;
+  @media screen and (max-width: 1280px){
+    font-size: 7rem;
+  }
+  @media screen and (max-width: 960px){
+    font-size: 5rem;
+  }
   .word{
     margin: 20% auto 23%;
+    @media screen and (max-width: 1280px){
+      margin:25% auto 10%;
+    }
+    @media screen and (max-width: 960px){
+      margin: 33% auto 10%;
+    }
   }
 
   &::before,&::after {
