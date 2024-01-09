@@ -1,9 +1,18 @@
 @import './reset.scss';
 body{
-  background: $main-color;
   color: $sub-color;
   transition:1s all;
   height: 100%;
+  -webkit-animation: changeBodyColor 1s forwards;
+          animation: changeBodyColor 1s forwards;
+}
+@keyframes changeBodyColor{
+  0% {
+    background-color: $sub-color;
+  }
+  100% {
+    background-color: $main-color;
+  }
 }
 a{
   text-decoration: none;
