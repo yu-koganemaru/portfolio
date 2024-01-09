@@ -1,0 +1,1 @@
+import{n as s,o as _,c as o,a as t,t as a,_ as n}from"./entry.25764821.js";const c={class:"firstview obvia"},r={class:"word"},i=s({__name:"FirstView",props:{word:{}},setup(p){return(e,d)=>(_(),o("div",c,[t("div",r,a(e.word),1)]))}});const m=n(i,[["__scopeId","data-v-457b5914"]]);export{m as _};
