@@ -10,7 +10,7 @@
 <style lang="scss" scoped>
 .footer{
   width: fit-content;
-  margin: 17% auto 5rem;
+  margin: 5rem auto 5rem;
   display: flex;
   @media screen and (max-width: 428px){
     margin: 17% auto 1rem;

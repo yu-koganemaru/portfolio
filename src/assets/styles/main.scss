@@ -40,6 +40,9 @@ a {
   transition: width 0.5s, height 0.5s, top 0.5s, left 0.5s;
   transform: translate(0, 0);
   pointer-events: none;
+  @media screen and (max-width: 960px){
+    display: none;
+  }
 }
 
 /*aタグにホバーした時に見た目変化*/

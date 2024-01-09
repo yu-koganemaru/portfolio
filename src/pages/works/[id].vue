@@ -3,11 +3,10 @@
 PageTransition(:title="work?.title")
 
 .work-detail.bc-alphapipe-bold
-  NuxtLink(to="/works") Back
 
   .content
-
     img(:src="image").img
+
     .info
       table
         tr(v-if="work.client")
@@ -31,6 +30,10 @@ PageTransition(:title="work?.title")
     BoxHeading(title="COMMENT").box-heading
     .comment
       p(v-for="para in work.comment" :key="para.index") {{ para }}
+    
+    .back.automate
+      img(src="~/assets/images/back.png").icon
+      NuxtLink(to="/works") Back
 
 </template>
 
@@ -128,10 +131,24 @@ const transitionToLink = () => {
     }
     .comment{
       width: 55%;
-      margin: 1rem auto 20%;
+      margin: 1rem auto 0;
       text-align: start;
       @media screen and (max-width: 960px){
         width: 75%;
+      }
+    }
+    .back{
+      width: fit-content;
+      display: flex;
+      margin: 15rem auto 5rem;
+      padding-right: 4rem;
+      font-size: 1.7rem;
+      .icon{
+        position: relative;
+        bottom: 7px;
+        left: 10px;
+        height: 3.4rem;
+        width: 4rem;
       }
     }
   }
