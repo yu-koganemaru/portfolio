@@ -30,19 +30,19 @@ const navs:{
   position: fixed;
   height: 4.3rem;
   width: calc(100% - 4rem);
-  margin-bottom: 5rem;
-  margin-left: 3rem;
+  margin: 0 3rem 0 5rem;
   z-index:1;
-  @media screen and (max-width: 428px){
+  @media screen and (max-width: 430px){
     position: static;
     display: block;
+    margin: auto;
   }
 
   .top-link{
     margin: 1.3rem 1rem 0;
     font-size: 40px;
     @include textShadow($accent-color, 10);
-    @media screen and (max-width: 428px){
+    @media screen and (max-width: 430px){
       text-align: center;
       margin: 0;
     }
@@ -60,12 +60,20 @@ const navs:{
     display: flex;
     justify-content: flex-end;
     height: 2rem;
+    @media screen and (max-width: 430px){
+      margin-top: 0;
+      justify-content: space-between;
+    }
 
     a{
       font-size: 2rem;
       margin: 0 3rem 0;
       @media screen and (max-width: 960px){
         margin: 0 1.5rem 0;
+      }
+      @media screen and (max-width: 430px){
+        margin: 0;
+        font-size: 1.5rem;
       }
     }
 

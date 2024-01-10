@@ -45,10 +45,17 @@ const props = defineProps(['title'])
     animation-fill-mode:forwards;
     opacity:0;
   }
+  @media screen and (max-width: 430px){
+    font-size: 2rem;
+  }
   .upper{
     margin-top: 21%;
     @media screen and (max-width: 960px){
       margin-top: 28%;
+    }
+    @media screen and (max-width: 430px){
+      margin: auto;
+      font-size: 3rem;
     }
   }
 }

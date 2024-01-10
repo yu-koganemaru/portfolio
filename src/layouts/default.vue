@@ -47,6 +47,9 @@ onMounted(() => {
 <style lang="scss">
 .content{
   padding: 5rem 5rem 0;
+  @media screen and (max-width: 430px){
+    padding: 1rem 1rem 0;
+  }
 }
 .transition-cover{
   position: absolute;
