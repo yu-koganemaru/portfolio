@@ -59,6 +59,9 @@ const getToLink = () => {
   position: relative;
   text-align: center;
   margin-bottom: 60px;
+  @media screen and (max-width: 430px){
+    border-radius: 25px;
+  }
 
   &:hover{
     margin-bottom: 50px;

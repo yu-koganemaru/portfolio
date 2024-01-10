@@ -45,17 +45,24 @@ const linkToGitHub = () => {
     width: fit-content;
     margin: 0 auto 5rem;
     font-size: 1.5rem;
+    @media screen and (max-width: 430px){
+      width: 100%;
+    }
     .contact-head{
       width: 30rem;
-      margin: 3rem 0 2rem;
+      margin: 3rem auto 2rem;
       padding: 0.5rem;
       background-color: $sub-color;
       color: $main-color;
+      @media screen and (max-width: 430px){
+        width: 90%;
+      }
     }
     .contact-body{
       display: flex;
       position: relative;
       width: 100%;
+      font-size: 1rem;
       .account{
         width: 100%;
         text-align: center;

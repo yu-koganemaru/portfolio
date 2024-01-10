@@ -49,7 +49,7 @@ defineProps<{ word: string }>()
     top: 18%;
     left: 15%;
     @media screen and (max-width: 430px){
-      top: 18%;
+      top: 30%;
       left: 5%;
     }
   }
@@ -59,7 +59,7 @@ defineProps<{ word: string }>()
     bottom: 13%;
     right: 15%;
     @media screen and (max-width: 430px){
-      bottom: 13%;
+      bottom: 10%;
       right: 5%;
     }
   }

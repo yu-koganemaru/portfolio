@@ -20,23 +20,29 @@ const works :Work = props.works
     height: 100%;
     margin: 0 auto 10rem;
     @media screen and (max-width: 1280px){
-      width: 65%;
+      width: 75%;
     }
     @media screen and (max-width: 960px){
       width: 80%;
     }
+    @media screen and (max-width: 430px){
+      width: 90%;
+    }
 
     .roles{
       display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 2.5rem 2rem 1rem;
+      width:fit-content;
+      margin: 2.5rem auto 1rem;
+      @media screen and (max-width: 430px){
+        font-size: 1rem;
+        display: block;
+      }
 
       .role{
         background-color: $main-color;
         color: $sub-color;
         padding: 0.5rem 1rem;
-        margin: 0 1rem;
+        margin: 0.5rem 1rem 1rem;
         border-radius: 10px;
         border: 3px solid $sub-color;
       }

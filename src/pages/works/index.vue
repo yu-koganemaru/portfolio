@@ -70,11 +70,20 @@ const undisclosed: string[] = [
     color: $main-color;
     font-size: 2rem;
     border-radius: 25px;
+    @media screen and (max-width: 430px){
+      padding: 0.7rem;
+      font-size: 1.5rem;
+      width: 90%;
+      height: 3.5rem;
+    }
     .heading-jp{
       height: 100%;
       font-size:1.8rem;
       position: relative;
       bottom: 1px;
+      @media screen and (max-width: 430px){
+        font-size: 1.5rem;
+      }
     }
   }
   .undisclosed{
@@ -84,6 +93,10 @@ const undisclosed: string[] = [
       margin: 0 auto 1rem;
       width: fit-content;
       font-size: 1.3rem;
+      @media screen and (max-width: 430px){
+        font-size: 1rem;
+        width:85%;
+      }
       .undisclosed-project{
         text-align: center;
         border-radius: 25px;

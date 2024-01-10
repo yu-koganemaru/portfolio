@@ -53,6 +53,7 @@ const transitionToLink = () => {
 
 <style lang="scss" scoped>
 .work-detail{
+  margin-top: 5rem;
   .content{
     text-align: center;
     font-family: "source-han-sans-japanese";
@@ -70,6 +71,10 @@ const transitionToLink = () => {
       @media screen and (max-width: 960px){
         width: 90%;
       }
+      @media screen and (max-width: 430px){
+        width: 100%;
+        border-radius: 25px;
+      }
     }
 
     .info{
@@ -80,6 +85,10 @@ const transitionToLink = () => {
       }
       @media screen and (max-width: 960px){
         width: 70%;
+      }
+      @media screen and (max-width: 430px){
+        width: 95%;
+        font-size: 0.8rem;
       }
       .offical{
         display: flex;
@@ -95,6 +104,10 @@ const transitionToLink = () => {
         position: absolute;
         width: 2rem;
         height: 2rem;
+        @media screen and (max-width: 430px){
+          width: 1.5rem;
+          height: 1.5rem;
+        }
       }
       table{
         width: 100%;
@@ -128,6 +141,9 @@ const transitionToLink = () => {
       @media screen and (max-width: 960px){
         width: 80%;
       }
+      @media screen and (max-width: 430px){
+        width: 95%;
+      }
     }
     .comment{
       width: 55%;
@@ -135,6 +151,9 @@ const transitionToLink = () => {
       text-align: start;
       @media screen and (max-width: 960px){
         width: 75%;
+      }
+      @media screen and (max-width: 430px){
+        width: 90%;
       }
     }
     .back{
