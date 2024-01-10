@@ -18,7 +18,7 @@ defineProps<{ title: string }>()
     border: 6px solid $sub-color;
     width: fit-content;
     @media screen and (max-width: 430px){
-      font-size: 1.3rem;
+      font-size: 1rem;
     }
   }
   .line{

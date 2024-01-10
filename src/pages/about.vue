@@ -148,6 +148,11 @@ const getAge = () => {
   font-size: 1.5rem;
   width: 35rem;
   margin: 5rem auto 5rem;
+  @media screen and (max-width: 430px){
+    margin: 3rem auto 3rem;
+    width: 100%;
+    font-size: 1rem;
+  }
 }
 .profiles{
   width: 100%;
@@ -155,21 +160,34 @@ const getAge = () => {
     padding-left: 8rem;
     text-align: start;
     width: 45%;
+    @media screen and (max-width: 430px){
+      padding-left: 2rem;
+      width: 40%;
+    }
   }
   .value{
     padding-left: 1rem;
     text-align: start;
     width: 45%;
+    @media screen and (max-width: 430px){
+      width: 60%;
+    }
   }
 }
 .content-skills{
   margin: 5rem auto 5rem;
   width: 40rem;
+  @media screen and (max-width: 430px){
+    width: 100%;
+  }
 }
 .skills{
   display: flex;
   flex-wrap: wrap;
   margin-left: 2rem;
+  @media screen and (max-width: 430px){
+    margin-left: 1rem;
+  }
   .skill{
     margin: 2rem 1rem;
     width: 10rem;
@@ -184,6 +202,11 @@ const getAge = () => {
     font-size: 1.2rem;
     font-weight: bold;
     text-align: center;
+    @media screen and (max-width: 430px){
+      margin: 0.5rem 1rem;
+      width: 40%;
+      font-size: 1rem;
+    }
   }
 }
 .content-text{
@@ -194,6 +217,9 @@ const getAge = () => {
   width: 90%;
   margin: 5rem auto 10rem;
   text-align: start;
+  @media screen and (max-width: 430px){
+    font-size: 0.8rem;
+  }
   h2{
     margin: 2rem 0 0;
     font-size: 2rem;
@@ -201,16 +227,22 @@ const getAge = () => {
   .hilight-para{
     padding: 0.8rem 0;
     font-size: 1.5rem;
+    @media screen and (max-width: 430px){
+      font-size: 1rem;
+    }
   }
   .hilight-letter{
     padding: 0.5rem;
     font-size: 1.7rem;
+    @media screen and (max-width: 430px){
+      font-size: 1rem;
+    }
   }
 
   &.hilght-first{
     &::first-letter{
       padding: 0 0.3rem 0.3rem 0;
-      font-size: 3rem;
+      font-size: 2rem;
     }
   }
 
@@ -233,6 +265,9 @@ const getAge = () => {
     flex-wrap: wrap;
     margin-left: 1rem;
     margin-top: 5rem;
+    @media screen and (max-width: 430px){
+      margin-left: 0;
+    }
     .tip{
       margin: 2rem 1rem;
       padding: 1rem 1rem;
@@ -249,6 +284,10 @@ const getAge = () => {
       font-size: 1.1rem;
       font-weight: bold;
       text-align: center;
+      @media screen and (max-width: 430px){
+        width: 100%;
+        font-size: 1rem;
+      }
     }
   }
 }

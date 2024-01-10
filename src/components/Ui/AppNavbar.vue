@@ -43,7 +43,7 @@ const navs:{
     font-size: 40px;
     @include textShadow($accent-color, 10);
     @media screen and (max-width: 430px){
-      font-size: 2rem;
+      font-size: 1.5rem;
       text-align: center;
       margin: 1rem auto 1rem;
     }
@@ -88,6 +88,9 @@ const navs:{
         height: 5px;
         top: -25px;
         border-radius: 25px;
+        @media screen and (max-width: 430px){
+          margin-top: 0px;
+        }
       }
     }
   }
