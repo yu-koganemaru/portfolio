@@ -62,7 +62,7 @@ const navs:{
     justify-content: flex-end;
     height: 2rem;
     @media screen and (max-width: 430px){
-      margin-top: 0;
+      margin-top: 1rem;
       justify-content: space-between;
     }
 

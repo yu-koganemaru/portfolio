@@ -144,7 +144,8 @@ const getAge = () => {
   margin: 10rem auto 0;
   border-radius: 25px;
   @media screen and (max-width: 430px){
-    font-size: 1.5rem;
+    margin: 3rem auto 0;
+    font-size: 1.3rem;
   }
 }
 .content-profile{
@@ -207,8 +208,8 @@ const getAge = () => {
     text-align: center;
     @media screen and (max-width: 430px){
       margin: 0.5rem 1rem;
-      width: 40%;
-      font-size: 1rem;
+      width: 42%;
+      font-size: 0.8rem;
     }
   }
 }
@@ -290,7 +291,7 @@ const getAge = () => {
       text-align: center;
       @media screen and (max-width: 430px){
         width: 100%;
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
   }
