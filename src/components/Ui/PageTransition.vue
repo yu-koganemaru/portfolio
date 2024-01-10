@@ -46,7 +46,7 @@ const props = defineProps(['title'])
     opacity:0;
   }
   @media screen and (max-width: 430px){
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .upper{
     margin-top: 21%;
