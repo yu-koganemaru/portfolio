@@ -207,9 +207,9 @@ const getAge = () => {
     font-weight: bold;
     text-align: center;
     @media screen and (max-width: 430px){
-      margin: 0.5rem 1rem;
+      margin: 1rem 0 1rem;
       width: 80%;
-      font-size: 0.7rem;
+      font-size: 1rem;
     }
   }
 }

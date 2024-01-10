@@ -43,7 +43,7 @@ const navs:{
     font-size: 40px;
     @include textShadow($accent-color, 10);
     @media screen and (max-width: 430px){
-      font-size: 1.5rem;
+      font-size: 1.8rem;
       text-align: center;
       margin: 1rem auto 1rem;
     }
@@ -62,7 +62,7 @@ const navs:{
     justify-content: flex-end;
     height: 2rem;
     @media screen and (max-width: 430px){
-      margin-top: 1rem;
+      margin-top: 3rem;
       justify-content: space-between;
     }
 
