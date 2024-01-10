@@ -20,6 +20,9 @@ defineProps<{ word: string }>()
   @media screen and (max-width: 960px){
     font-size: 5rem;
   }
+  @media screen and (max-width: 430px){
+    font-size: 3rem;
+  }
   .word{
     margin: 20% auto 23%;
     @media screen and (max-width: 1280px){
@@ -27,6 +30,9 @@ defineProps<{ word: string }>()
     }
     @media screen and (max-width: 960px){
       margin: 33% auto 10%;
+    }
+    @media screen and (max-width: 430px){
+      margin: 70% auto 10%;
     }
   }
 
@@ -42,12 +48,20 @@ defineProps<{ word: string }>()
     border-top: solid 3px;
     top: 18%;
     left: 15%;
+    @media screen and (max-width: 430px){
+      top: 18%;
+      left: 5%;
+    }
   }
   &::after {
     border-right: solid 3px;
     border-bottom: solid 3px;
     bottom: 13%;
     right: 15%;
+    @media screen and (max-width: 430px){
+      bottom: 13%;
+      right: 5%;
+    }
   }
 }
 @keyframes fadeInFirstview{

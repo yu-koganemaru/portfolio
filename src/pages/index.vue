@@ -18,6 +18,7 @@ PageTransition(title="Hello world!")
     position:relative;
     @media screen and (max-width: 430px){
       margin: 50% auto 5rem;
+      padding-right: 2rem;
       font-size: 2rem;
     }
   }

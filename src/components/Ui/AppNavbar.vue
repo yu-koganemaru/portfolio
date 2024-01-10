@@ -43,8 +43,9 @@ const navs:{
     font-size: 40px;
     @include textShadow($accent-color, 10);
     @media screen and (max-width: 430px){
+      font-size: 2rem;
       text-align: center;
-      margin: 0;
+      margin: 1rem auto 1rem;
     }
     a{
       color: $sub-color;
