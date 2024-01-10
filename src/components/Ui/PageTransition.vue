@@ -55,7 +55,7 @@ const props = defineProps(['title'])
     }
     @media screen and (max-width: 430px){
       margin: 60% auto 0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
     }
   }
 }
