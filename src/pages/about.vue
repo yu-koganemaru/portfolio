@@ -143,6 +143,9 @@ const getAge = () => {
   font-size: 2rem;
   margin: 10rem auto 0;
   border-radius: 25px;
+  @media screen and (max-width: 430px){
+    font-size: 1.5rem;
+  }
 }
 .content-profile{
   font-size: 1.5rem;
@@ -218,6 +221,7 @@ const getAge = () => {
   margin: 5rem auto 10rem;
   text-align: start;
   @media screen and (max-width: 430px){
+    margin: 2rem auto 6rem;
     font-size: 0.8rem;
   }
   h2{
