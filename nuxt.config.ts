@@ -3,7 +3,7 @@ export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
   routeRules: {
-    '/works/*': { ssr: true, prerender: true },
+    '/works/*': { ssr: true, prerender: true }
   },
   srcDir: 'src/',
   typescript: {

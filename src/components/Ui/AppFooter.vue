@@ -2,7 +2,7 @@
 .footer.automate
   .copyright
     img(src="~/assets/images/copyright.png" alt="(C)").copyright-icon
-    span.copyright-text 2024~　YU KOGANEMARU
+    span.copyright-text 2024~ YU KOGANEMARU
 </template>
 
 <script setup lang="ts">

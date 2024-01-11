@@ -4,14 +4,11 @@
 </template>
 
 <script lang="ts" setup>
-import { filename } from 'pathe/utils';
-
 const router = useRouter()
-
-const props = defineProps(['work'])
+const props = defineProps<{ work: Work }>()
 const work :Work = props.work
 
-const image  = '/portfolio/_nuxt/' + work.thumbnailImage;
+const image = '/portfolio/_nuxt/' + work.thumbnailImage
 
 // Common funcs.
 const transitionToDetail = () => {

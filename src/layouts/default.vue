@@ -1,10 +1,11 @@
 <template lang="pug">
-#cursor.cursor
-AppNavbar
-//- .transition-cover(:style="styles")
-.content(:style="contentStyles")
-  NuxtPage(@setImageOnLayout="setImage")
-AppFooter
+.default
+  #cursor.cursor
+  AppNavbar
+  //- .transition-cover(:style="styles")
+  .content(:style="contentStyles")
+    NuxtPage(@set-image-on-layout="setImage")
+  AppFooter
 </template>
 
 <script setup lang="ts">

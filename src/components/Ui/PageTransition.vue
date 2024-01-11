@@ -11,7 +11,7 @@ definePageMeta({
     name: 'shutter'
   }
 })
-const props = defineProps(['title'])
+defineProps<{ title: string }>()
 </script>
 
 <style lang="scss" scoped>
@@ -116,7 +116,3 @@ const props = defineProps(['title'])
   }
 }
 </style>
-
-function definePageMeta(arg0: { pageTransition: { name: string } }) {
-  throw new Error("Function not implemented.")
-}

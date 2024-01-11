@@ -1,38 +1,39 @@
 <template lang="pug">
-//- PageTransition
-PageTransition(title="CONTACT")
-//- FirstView
-FirstView(word="CONTACT.")
+.contact-page
+  //- PageTransition
+  PageTransition(title="CONTACT")
+  //- FirstView
+  FirstView(word="CONTACT.")
 
-.contact.automate
+  .contact.automate
 
-  .contact-content
-    .mail 
-      .contact-head Mail
-      .contact-body 
-        p.account yu.koganemaru@gmail.com
+    .contact-content
+      .mail
+        .contact-head Mail
+        .contact-body
+          p.account yu.koganemaru@gmail.com
 
-    .twitter
-      .contact-head X (Twitter)
-      .contact-body 
-        p.account @yu_web_engineer
-        img(src="~/assets/images/link-icon.png").link-icon(@click="linkToTwitter")
+      .twitter
+        .contact-head X (Twitter)
+        .contact-body
+          p.account @yu_web_engineer
+          img(src="~/assets/images/link-icon.png").link-icon(@click="linkToTwitter")
 
-    .github
-      .contact-head GitHub
-      .contact-body
-        p.account yu-koganemaru
-        img(src="~/assets/images/github-mark-white.png").link-icon(@click="linkToGitHub")
+      .github
+        .contact-head GitHub
+        .contact-body
+          p.account yu-koganemaru
+          img(src="~/assets/images/github-mark-white.png").link-icon(@click="linkToGitHub")
 
 </template>
 
 <script lang="ts" setup>
 const linkToTwitter = () => {
-  const url = "https://twitter.com/yu_web_engineer"
+  const url = 'https://twitter.com/yu_web_engineer'
   window.open(url, '_blank')
 }
 const linkToGitHub = () => {
-  const url = "https://github.com/yu-koganemaru"
+  const url = 'https://github.com/yu-koganemaru'
   window.open(url, '_blank')
 }
 
@@ -76,6 +77,5 @@ const linkToGitHub = () => {
     }
   }
 }
-
 
 </style>

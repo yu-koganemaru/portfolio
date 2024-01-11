@@ -1,10 +1,11 @@
 <template lang="pug">
-//- PageTransition
-PageTransition(title="Hello world!")
+.top-page
+  //- PageTransition
+  PageTransition(title="Hello world!")
 
-.top.automate
-  .name YU KOGANEMARU
-  .sub-text developer
+  .top.automate
+    .name YU KOGANEMARU
+    .sub-text developer
 </template>
 
 <style lang="scss" scoped>

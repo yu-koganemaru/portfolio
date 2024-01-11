@@ -1,39 +1,40 @@
 <template lang="pug">
-//- PageTransition
-PageTransition(:title="work?.title")
+.work-detail-page
+  //- PageTransition
+  PageTransition(:title="work?.title")
 
-.work-detail.bc-alphapipe-bold
+  .work-detail.bc-alphapipe-bold
 
-  .content
-    img(:src="image").img
+    .content
+      img(:src="image").img
 
-    .info
-      table
-        tr(v-if="work.client")
-          th CLIENT
-          td {{ work.client }}
-        tr
-          th NAME
-          td {{ work.siteName }}
-        tr
-          th OVERVIEW
-          td {{ work.overview }}
-        tr(v-if="work.officalUrl")
-          th OFFICAL
-          td.offical
-            .offical-url {{ work.officalUrl }}
-            img(src="~/assets/images/link-icon.png").link-icon(@click="transitionToLink")
-        tr
-          th DEV OUTLINE
-          td {{ work.devOutline }}
+      .info
+        table
+          tr(v-if="work.client")
+            th CLIENT
+            td {{ work.client }}
+          tr
+            th NAME
+            td {{ work.siteName }}
+          tr
+            th OVERVIEW
+            td {{ work.overview }}
+          tr(v-if="work.officalUrl")
+            th OFFICAL
+            td.offical
+              .offical-url {{ work.officalUrl }}
+              img(src="~/assets/images/link-icon.png").link-icon(@click="transitionToLink")
+          tr
+            th DEV OUTLINE
+            td {{ work.devOutline }}
 
-    BoxHeading(title="COMMENT").box-heading
-    .comment
-      p(v-for="para in work.comment" :key="para.index") {{ para }}
-    
-    .back.automate
-      img(src="~/assets/images/back.png").icon
-      NuxtLink(to="/works") Back
+      BoxHeading(title="COMMENT").box-heading
+      .comment
+        p(v-for="para in work.comment" :key="para.index") {{ para }}
+
+      .back.automate
+        img(src="~/assets/images/back.png").icon
+        NuxtLink(to="/works") Back
 
 </template>
 
@@ -43,7 +44,7 @@ import worksData from '@/assets/json/works.json'
 const { params } = useRoute()
 const work = worksData.works.find((work: Work) => work.id === params.id)
 
-const image  = '/portfolio/_nuxt/' + work?.thumbnailImage;
+const image = '/portfolio/_nuxt/' + work?.thumbnailImage
 
 const transitionToLink = () => {
   const url = work?.officalUrl

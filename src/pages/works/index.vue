@@ -1,31 +1,32 @@
 <template lang="pug">
-//- PageTransition
-PageTransition(title="WORKS")
-//- FirstView
-FirstView(word="MY WORKS.")
+.works-page
+  //- PageTransition
+  PageTransition(title="WORKS")
+  //- FirstView
+  FirstView(word="MY WORKS.")
 
-.works.bc-alphapipe-bold
+  .works.bc-alphapipe-bold
 
-  .disclosed
-    .heading
-      span DISCLOSED / 
-      span.vdl-v7marugothic.heading-jp 公開案件
-    WorksCardList(:works="discloseds")
+    .disclosed
+      .heading
+        span DISCLOSED /
+        span.vdl-v7marugothic.heading-jp 公開案件
+      WorksCardList(:works="discloseds")
 
-  .Independent
-    .heading
-      span INDEPENDENT / 
-      span.vdl-v7marugothic.heading-jp 自主制作
-    WorksCardList(:works="independents")
+    .Independent
+      .heading
+        span INDEPENDENT /
+        span.vdl-v7marugothic.heading-jp 自主制作
+      WorksCardList(:works="independents")
 
-  .undisclosed
-    .heading
-      span UNDISCLOSED / 
-      span.vdl-v7marugothic.heading-jp 非公開案件
-    .undisclosed-content
-      p.undisclosed-project(v-for="project, index in undisclosed" :key="index") {{ project }}
-      .and-more
-        p And more.
+    .undisclosed
+      .heading
+        span UNDISCLOSED /
+        span.vdl-v7marugothic.heading-jp 非公開案件
+      .undisclosed-content
+        p.undisclosed-project(v-for="project, index in undisclosed" :key="index") {{ project }}
+        .and-more
+          p And more.
 
 </template>
 
@@ -40,15 +41,15 @@ const filteringWorksByType = (data: Works, type: string) => {
 
 const discloseds = filteringWorksByType(allWorksData, 'disclosed')
 const independents = filteringWorksByType(allWorksData, 'independent')
-const undisclosed: string[] = [
+const undisclosed = [
   '大学向け広報支援システム',
   '大学向け学生管理支援システム',
   '大学向け学生就職支援システム',
   '官公庁向け空き家管理システム',
   '社労士向け顧客情報管理システム',
   'テレビ会社社内システム',
-  '社内研修講師',
-];
+  '社内研修講師'
+]
 
 // emits.
 // const emit = defineEmits(['setImageOnLayout'])

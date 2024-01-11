@@ -1,13 +1,13 @@
 <template lang="pug">
 .header.bc-alphapipe-bold
   .top-link
-    NuxtLink(v-bind:to="'/'") Hello world.
+    NuxtLink(:to="'/'") Hello world.
   nav
     NuxtLink(
       v-for="nav in navs"
       :key="nav.index"
-      v-bind:to="nav.to"
-    ) {{nav.title}}
+      :to="nav.to"
+    ) {{ nav.title }}
       .link-under-line
 
 </template>

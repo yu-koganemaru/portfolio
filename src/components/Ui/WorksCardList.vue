@@ -7,8 +7,8 @@
 </template>
 
 <script lang="ts" setup>
-const props = defineProps(['works'])
-const works :Work = props.works
+const props = defineProps<{ works: Works }>()
+const works :Works = props.works
 </script>
 
 <style lang="scss" scoped>
