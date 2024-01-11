@@ -54,7 +54,7 @@ defineProps<{ title: string }>()
       margin-top: 29%;
     }
     @media screen and (max-width: 430px){
-      margin: 60% auto 0;
+      margin: 62% auto 0;
       font-size: 2.8rem;
     }
   }
