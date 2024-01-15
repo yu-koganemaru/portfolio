@@ -2,6 +2,29 @@
 export default defineNuxtConfig({
   devtools: { enabled: false },
   ssr: false,
+  app: {
+    baseURL: '/portfolio/',
+    head: {
+      title: 'YU KOGANEMARU',
+      meta: [
+          {name: 'description', content: 'YU KOGANEMARU|WEB developerのYUの個人サイトです。'},
+          { property: 'og:type', content: 'website' },
+          { property: 'og:site_name', content: 'YU KOGANEMARU' },
+      ],
+      link: [
+        {
+          rel: 'preconnect',
+          href: 'https://use.typekit.net'
+        },
+        { rel: 'stylesheet', href: 'https://use.typekit.net/ysq4mzr.css' }
+      ],
+      script: [
+        {
+          src: 'https://use.typekit.net/eic3tdn.js'
+        }
+      ]
+    }
+  },
   routeRules: {
     '/works/*': { ssr: true, prerender: true }
   },
@@ -35,21 +58,4 @@ export default defineNuxtConfig({
       }
     }
   },
-  app: {
-    baseURL: '/portfolio/',
-    head: {
-      link: [
-        {
-          rel: 'preconnect',
-          href: 'https://use.typekit.net'
-        },
-        { rel: 'stylesheet', href: 'https://use.typekit.net/ysq4mzr.css' }
-      ],
-      script: [
-        {
-          src: 'https://use.typekit.net/eic3tdn.js'
-        }
-      ]
-    }
-  }
 })
